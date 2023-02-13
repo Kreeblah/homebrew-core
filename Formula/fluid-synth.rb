@@ -21,7 +21,6 @@ class FluidSynth < Formula
   depends_on "glib"
   depends_on "libsndfile"
   depends_on "portaudio"
-  depends_on "readline"
 
   resource "homebrew-test" do
     url "https://upload.wikimedia.org/wikipedia/commons/6/61/Drum_sample.mid"
@@ -35,6 +34,7 @@ class FluidSynth < Formula
       -DLIB_SUFFIX=
       -Denable-dbus=OFF
       -Denable-sdl2=OFF
+      -Denable-readline=ON
     ]
 
     mkdir "build" do
