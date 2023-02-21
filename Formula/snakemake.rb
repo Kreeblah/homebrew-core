@@ -3,19 +3,19 @@ class Snakemake < Formula
 
   desc "Pythonic workflow system"
   homepage "https://snakemake.readthedocs.io/"
-  url "https://files.pythonhosted.org/packages/5f/b6/513a64da9bc5a45f8fa7fc11e47959a9f69d63abe772b3db890e510b774b/snakemake-7.22.0.tar.gz"
-  sha256 "68d7bb4ab7555f7b58a3ba748a880024df919042cfb670da231886385de697cd"
+  url "https://files.pythonhosted.org/packages/d9/29/72005d2febed5ea652215a41d178a734b5529e6aac43a0c9b96ffebcbff5/snakemake-7.23.1.tar.gz"
+  sha256 "4dc960a721d2d8eaebd9b10e56564e3742f78c65d36cd31966ed205afcc4253d"
   license "MIT"
   head "https://github.com/snakemake/snakemake.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_ventura:  "38c05219474fa99f292ee12ed43bae5288ce33b69d530a61ccaf9b9d61fb5353"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "9ec02bce05a0494f37666f373c645187aa6bdea2663988e26bd8dbd46b5f64e0"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "9ff593d7079a0c5831d20a4b3218b288f1c2457ff3baf659153631c7ccac0868"
-    sha256 cellar: :any_skip_relocation, ventura:        "3f0008cdbc5952f8ecc13b29da91a4a77608e738dae9e3be63729db2bc15c247"
-    sha256 cellar: :any_skip_relocation, monterey:       "62b5112f45e3704fc9d0660f03624793fa8cb3177bad02ff3683e9f334b11f7b"
-    sha256 cellar: :any_skip_relocation, big_sur:        "ef43947d27c2a3496002db768ee88eef49d15c0d19723e76435049ee9fb671e1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "2f814555e139980d989e807193fa0da573e53a6cc64f3ef49a90d54ebe4fa719"
+    sha256 cellar: :any_skip_relocation, arm64_ventura:  "86c8a789a3d8e149f7809393e46cf186787ae7ef7b9bcb6a78298c5323689d58"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "3889313e9f0fd66bb5a87919d574374a35ee84e8927e211ed9ecdddeb58ca3e1"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "1d0c4e8fb158358e64a894e64cfb9003c46fed271b86ad521fa83d6ad9fc031b"
+    sha256 cellar: :any_skip_relocation, ventura:        "815d4cdadfaf555374727c39706c733965f75b0d43bc5c1541d4e5913cd30e2e"
+    sha256 cellar: :any_skip_relocation, monterey:       "6ca0e3ae8305f7d4d1e44c87529122509d7ca7e119ed9789c857911462b140a4"
+    sha256 cellar: :any_skip_relocation, big_sur:        "f6a2ae40baf4d3994319d1e623570eafbc8461a516625c634b2e3f7ef0b55471"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "8c29294c554290a426992df737c8fc90c61f8174312ca97f07fd169711390765"
   end
 
   depends_on "cbc"
@@ -75,8 +75,8 @@ class Snakemake < Formula
   end
 
   resource "GitPython" do
-    url "https://files.pythonhosted.org/packages/ef/8d/50658d134d89e080bb33eb8e2f75d17563b5a9dfb75383ea1a78e1df6fff/GitPython-3.1.30.tar.gz"
-    sha256 "769c2d83e13f5d938b7688479da374c4e3d49f71549aaf462b646db9602ea6f8"
+    url "https://files.pythonhosted.org/packages/5f/11/2b0f60686dbda49028cec8c66bd18a5e82c96d92eef4bc34961e35bb3762/GitPython-3.1.31.tar.gz"
+    sha256 "8ce3bcf69adfdf7c7d503e78fd3b1c492af782d58893b650adb2ac8912ddd573"
   end
 
   resource "humanfriendly" do

@@ -4,8 +4,8 @@ class Semgrep < Formula
   desc "Easily detect and prevent bugs and anti-patterns in your codebase"
   homepage "https://semgrep.dev"
   url "https://github.com/returntocorp/semgrep.git",
-      tag:      "v1.11.0",
-      revision: "0a7d2d5500b5e3f58e56bfa65ca87592deaaac4b"
+      tag:      "v1.12.1",
+      revision: "9823c976c9650d84ec89c5d3b00a7714cf241cac"
   license "LGPL-2.1-only"
   head "https://github.com/returntocorp/semgrep.git", branch: "develop"
 
@@ -15,13 +15,13 @@ class Semgrep < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_ventura:  "b8d612e7845b833f352ffd41b26eee542558ada7e003f89748834aa592fbbf65"
-    sha256 cellar: :any, arm64_monterey: "fc7253f0469e35523031ee7eac790d1de3ab7a548bd85902f99562555ecc242c"
-    sha256 cellar: :any, arm64_big_sur:  "d8053665ed66189306f83b008e4d8315f8df15befe42fa959a61cbb7bcb0f4ab"
-    sha256 cellar: :any, ventura:        "c4423e28bb14151630b9ae0f5e9c42d24a92d6534e986451e6b1046bcf676125"
-    sha256 cellar: :any, monterey:       "1ba47ce36f7973ae6e66a10598497dc983fbcb1b26478aa04156150c097585ff"
-    sha256 cellar: :any, big_sur:        "d8ca2e95a46d22b745e25d2eae665d3542b483adf664b0bce52ad64b2bda7fc9"
-    sha256               x86_64_linux:   "455b6436440d92d546778e934048ddd55c86d751a6179cf618a6b017af1bab82"
+    sha256 cellar: :any, arm64_ventura:  "0e452f46e66a73e5bdc3db6dc83c6d021841ee297d35504e6744cc68c8d0d062"
+    sha256 cellar: :any, arm64_monterey: "df2f76e778d65e579b4cd444d55aeb31d45bf5666f2143a732a25963ac012ebc"
+    sha256 cellar: :any, arm64_big_sur:  "54d2b51fdee9ebbea80b086fe5419184c2829e764a26b4a1e3dd4b5ee032460a"
+    sha256 cellar: :any, ventura:        "c50df9b6096d665189d2905ab7cc35538d291b875d9c8e21a5b2c6c6b849a0b1"
+    sha256 cellar: :any, monterey:       "924d9f8a440a188aee51bdb0f64d7bbe5e929b6d4f5414a97fda39f8ef65cb6a"
+    sha256 cellar: :any, big_sur:        "d026d1dfcf9940ea080abd552e3ac5d14e2918592d36868af86321b7e430d128"
+    sha256               x86_64_linux:   "ceeed84b749bfa0e75f40317b7bf2808bec5f0304ffc404f2dc7cb3415e3abf4"
   end
 
   depends_on "cmake" => :build
@@ -188,6 +188,7 @@ class Semgrep < Formula
 
       # Officially suggested workaround for breaking change in setuptools v50.0.0
       # See: https://sourceforge.net/p/ruamel-yaml/tickets/356/
+      # Relevant Issue: https://github.com/pypa/setuptools/issues/2355
       ENV["SETUPTOOLS_USE_DISTUTILS"] = "stdlib"
 
       system "opam", "init", "--no-setup", "--disable-sandboxing"
@@ -198,6 +199,7 @@ class Semgrep < Formula
 
       # We pass --no-depexts so as to disable the check for pkg-config.
       # It seems to not be found when building on ubuntu
+      # See discussion on https://github.com/Homebrew/homebrew-core/pull/82693
       system "opam", "install", "-y", "--deps-only", "--no-depexts", "./libs/ocaml-tree-sitter-core"
       system "opam", "install", "-y", "--deps-only", "--no-depexts", "./"
 

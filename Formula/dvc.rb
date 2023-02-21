@@ -3,18 +3,18 @@ class Dvc < Formula
 
   desc "Git for data science projects"
   homepage "https://dvc.org"
-  url "https://files.pythonhosted.org/packages/05/6b/0180c737735b21ac72a4fccd4a3455742f33d6ba8b2eb17e67dcf66f2824/dvc-2.44.0.tar.gz"
-  sha256 "fd51cfd42eb88060813fa8f16478ddbb86c8421364fbccf2f2ac2b47d97cd9be"
+  url "https://files.pythonhosted.org/packages/19/19/692fb9f269c392e564be90aa50369a93dd179d4fd3fbdc8c0ec272baa06e/dvc-2.45.1.tar.gz"
+  sha256 "189c5c015cc275b96d7ffb2d89fb9d8ed11b2387fbfa5b447e20903c09ba2b32"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any,                 arm64_ventura:  "76e04424a0187612e69b52ee3d486f47f7235be4842c1d3bc69b4df0a7d90a7f"
-    sha256 cellar: :any,                 arm64_monterey: "2eb51ca79384a47d9a86eb7b4ec2dd801412e0b49d69f1c0bb3d47bc9e0db317"
-    sha256 cellar: :any,                 arm64_big_sur:  "1bc5b38c460c3ee4cb6b4fb50a6dcec736846eeed389e8057dedfbc93d367d79"
-    sha256 cellar: :any,                 ventura:        "7b2a64c4c08241f57b84e734a2cf6ded42fb6daad63483262e86320e545a5df0"
-    sha256 cellar: :any,                 monterey:       "e05141d81980c63ce44d99e7ad4d76c6859c4c49aa315b107542dcf58dbbdb42"
-    sha256 cellar: :any,                 big_sur:        "8f2767cdb23f7bc5aa684a065c04a331565ea5b4d0fa5e6f5e048aaa720e54f9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "cfb57b53a1fbcebef5853267630dc8809a3780710d51cd6daa5a217fe84106c6"
+    sha256 cellar: :any,                 arm64_ventura:  "39e73e3996117e1b8878f06fe34c1f5abe6188614ee2513ab52d2027dc3ceeea"
+    sha256 cellar: :any,                 arm64_monterey: "b27ad4be0112e95788b47e4ef0bb085be269951bd31906f429cd06ca0ce3541b"
+    sha256 cellar: :any,                 arm64_big_sur:  "488f1b0780a527304225d93fe07fa08374c1c3dfbf82454aac44551a251875e6"
+    sha256 cellar: :any,                 ventura:        "c6232da3f1ee9efc285d9e0c8effe04d2e7b34356098af7d1571d80223a3101a"
+    sha256 cellar: :any,                 monterey:       "c3a03dbd223ecd9c45d4733961ccebb02811013e3a6873cd1aa34975dbbc59f0"
+    sha256 cellar: :any,                 big_sur:        "10c0129a61197d484c36bb5fde9906ea2dd443d4013f1929015ad7d1c137b072"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "6a489dec11d426acf3ef09c0344ad55f9147221f5270054127182d2d35e885c1"
   end
 
   depends_on "openjdk" => :build # for hydra-core
@@ -51,8 +51,8 @@ class Dvc < Formula
   end
 
   resource "aiohttp" do
-    url "https://files.pythonhosted.org/packages/ff/4f/62d9859b7d4e6dc32feda67815c5f5ab4421e6909e48cbc970b6a40d60b7/aiohttp-3.8.3.tar.gz"
-    sha256 "3828fb41b7203176b82fe5d699e0d845435f2374750a44b480ea6b930f6be269"
+    url "https://files.pythonhosted.org/packages/c2/fd/1ff4da09ca29d8933fda3f3514980357e25419ce5e0f689041edb8f17dab/aiohttp-3.8.4.tar.gz"
+    sha256 "bf2e1a9162c1e441bf805a1fd166e249d574ca04e03b34f97e2928769e91ab5c"
   end
 
   resource "aiohttp-retry" do
@@ -186,8 +186,8 @@ class Dvc < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/a1/34/44964211e5410b051e4b8d2869c470ae8a68ae274953b1c7de6d98bbcf94/charset-normalizer-2.1.1.tar.gz"
-    sha256 "5a3d016c7c547f69d6f81fb0db9449ce888b418b5b9952cc5e6e66843e9dd845"
+    url "https://files.pythonhosted.org/packages/96/d7/1675d9089a1f4677df5eb29c3f8b064aa1e70c1251a0a8a127803158942d/charset-normalizer-3.0.1.tar.gz"
+    sha256 "ebea339af930f8ca5d7a699b921106c6e29c617fe9606fa7baa043c1cdae326f"
   end
 
   resource "click" do
@@ -256,8 +256,8 @@ class Dvc < Formula
   end
 
   resource "dulwich" do
-    url "https://files.pythonhosted.org/packages/14/a5/cf61f9209d48abf47d48086e0a0388f1030bb5f7cf2661972eee56ccee3d/dulwich-0.21.2.tar.gz"
-    sha256 "d865ae7fd9497d64ce345a6784ff1775b01317fba9632ef9d2dfd7978f1b0d4f"
+    url "https://files.pythonhosted.org/packages/53/a8/c96686cd8e2b0875dbd7d3248c158ff07f2c0ce41857700711a92e97b463/dulwich-0.21.3.tar.gz"
+    sha256 "7ca3b453d767eb83b3ec58f0cfcdc934875a341cdfdb0dc55c1431c96608cf83"
   end
 
   resource "dvc-azure" do
@@ -266,8 +266,8 @@ class Dvc < Formula
   end
 
   resource "dvc-data" do
-    url "https://files.pythonhosted.org/packages/c1/54/37fba309469adcd1ced6bce0074a69b9298486c4b32877b995c5ab25fd50/dvc-data-0.39.3.tar.gz"
-    sha256 "d177a1b95097a97a5e49e07a11212cc5168b4ab3984d21e1eccf87da582cc57f"
+    url "https://files.pythonhosted.org/packages/bb/22/c1e1578e178c7e0d4bdcbfccf508cadbc508a8b721aa9fa788ba4e15bb8e/dvc-data-0.40.3.tar.gz"
+    sha256 "fb3b30d5589e01b7e68babb840cf1dddae319869785b073223df7d8a795963ee"
   end
 
   resource "dvc-gdrive" do
@@ -301,8 +301,8 @@ class Dvc < Formula
   end
 
   resource "dvc-render" do
-    url "https://files.pythonhosted.org/packages/61/d4/6a0e0213206ee7349286d6a47bdb41a811a94f2d29933e3a838e275d8d1f/dvc-render-0.1.1.tar.gz"
-    sha256 "0cd67c9429e4fe2cabdd1f22b0d52ac670bcbfcfdf78d6a567a276e8ece39605"
+    url "https://files.pythonhosted.org/packages/ba/bb/7e7745c6e65420f5f58083f433c038b906ffe9781f518f27bc8bd1ac1036/dvc-render-0.2.0.tar.gz"
+    sha256 "933580ef021f9004360cb9c6db0abf97b84adfd9453a6b4a2b8e4116798a7bf0"
   end
 
   resource "dvc-s3" do
@@ -336,8 +336,8 @@ class Dvc < Formula
   end
 
   resource "dvclive" do
-    url "https://files.pythonhosted.org/packages/6b/76/904700a56433e062a00de1b89e3aa036190c2dc1d62eca94448ac9fc5770/dvclive-2.0.2.tar.gz"
-    sha256 "795db7a05deb0d33ff9bb309375b9493772cc8072c25c79ee7f1939d22958833"
+    url "https://files.pythonhosted.org/packages/d9/f6/61037734cd47c3db6c654ff08600740f9690ebdac16e56d0c8a68bfecdcc/dvclive-2.1.0.tar.gz"
+    sha256 "99c64f3de61e1b05b5b17204ab0a9d88b61c77911474438d4ecad8b776b29d1d"
   end
 
   resource "filelock" do
@@ -381,8 +381,8 @@ class Dvc < Formula
   end
 
   resource "GitPython" do
-    url "https://files.pythonhosted.org/packages/ef/8d/50658d134d89e080bb33eb8e2f75d17563b5a9dfb75383ea1a78e1df6fff/GitPython-3.1.30.tar.gz"
-    sha256 "769c2d83e13f5d938b7688479da374c4e3d49f71549aaf462b646db9602ea6f8"
+    url "https://files.pythonhosted.org/packages/5f/11/2b0f60686dbda49028cec8c66bd18a5e82c96d92eef4bc34961e35bb3762/GitPython-3.1.31.tar.gz"
+    sha256 "8ce3bcf69adfdf7c7d503e78fd3b1c492af782d58893b650adb2ac8912ddd573"
   end
 
   resource "google-api-core" do
@@ -391,13 +391,13 @@ class Dvc < Formula
   end
 
   resource "google-api-python-client" do
-    url "https://files.pythonhosted.org/packages/9e/bd/8c3d136a95bdb1311cd5808e0d64dfdb457bfa421cc254d0cb07c3d522eb/google-api-python-client-2.77.0.tar.gz"
-    sha256 "f18e9dbb365f0485194a8daf5d60da2cff6a80ce2c9a694efc2b279922cb3dd0"
+    url "https://files.pythonhosted.org/packages/36/40/487e2adabb8f9b96536f9909cec7937f27a2981e4c327d44d6633fdd286a/google-api-python-client-2.78.0.tar.gz"
+    sha256 "32d56a7522a338e525b9c664773230fc8ce382204d4b690eec67a3f8d55d9d63"
   end
 
   resource "google-auth" do
-    url "https://files.pythonhosted.org/packages/a9/b8/106bf395ad5be94bfd1e4c157a36db6dfcca445f72ff63458358d9203157/google-auth-2.16.0.tar.gz"
-    sha256 "ed7057a101af1146f0554a769930ac9de506aeca4fd5af6543ebe791851a9fbd"
+    url "https://files.pythonhosted.org/packages/3b/84/5d156b0736abe57ab060e81775c776602679522c141eb3ca367f31e4d858/google-auth-2.16.1.tar.gz"
+    sha256 "5fd170986bce6bfd7bb5c845c4b8362edb1e0cba901e062196e83f8bb5d5d32c"
   end
 
   resource "google-auth-httplib2" do
@@ -696,8 +696,8 @@ class Dvc < Formula
   end
 
   resource "scmrepo" do
-    url "https://files.pythonhosted.org/packages/d4/8c/f2eb887bf9eadee079dc7d213c1d1a2a9dd221fbd0f9d1dd3160fc30e084/scmrepo-0.1.9.tar.gz"
-    sha256 "31139c92590582977f33399e307e7d8f63aa245aea54f47e393a0f30a0bce80c"
+    url "https://files.pythonhosted.org/packages/46/76/ff04030770182ebff0b86b3115b4734e3a4c7828d0fcea321c3823baf83c/scmrepo-0.1.11.tar.gz"
+    sha256 "795773823668604681c280d77c713eabc8ad023ed9133d8373b2fb314241ee11"
   end
 
   resource "shortuuid" do

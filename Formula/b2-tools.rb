@@ -3,22 +3,22 @@ class B2Tools < Formula
 
   desc "B2 Cloud Storage Command-Line Tools"
   homepage "https://github.com/Backblaze/B2_Command_Line_Tool"
-  url "https://files.pythonhosted.org/packages/06/9b/2f5e207a898458172e53ecddb5be8e6728a877441d7a300cd0f381424c43/b2-3.7.0.tar.gz"
-  sha256 "b16ea0699594877597fb4faa1d1950e20673294e1b2fc78f3cd296a3dadd17ce"
+  url "https://files.pythonhosted.org/packages/d6/64/ea8699244dfa15ddb1b92d93f386955a2d9f66a5c0fa28f95ea4b5445f96/b2-3.7.1.tar.gz"
+  sha256 "68b10511447576c3286159f5fe66ee180dddb4547dcb4a423fa964454720019f"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_ventura:  "217e9d20ea75792705b7b05ae7a31205ef0beacd0f5d9013faf117b97eb70cc9"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "70a9e69a1931024ccd8d3397d1e9da88239f330609eeedf67fabf84da70bec01"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "f45b7434d1f2f0c17b36ef6c90467dbfb1cbec54125a4b18279a6540f7fe801a"
-    sha256 cellar: :any_skip_relocation, ventura:        "a3d788dc987a6804b47d4b32f154adfadcb63285ca4fbabecbd035d5e7146626"
-    sha256 cellar: :any_skip_relocation, monterey:       "3f273deccf6ca2993046b509984bc9639c25a3633bbbd6872b71a2d2214679c9"
-    sha256 cellar: :any_skip_relocation, big_sur:        "e282f6c71020ac59d981e157c7f6686b94e7620c7255fc1c1e65be5d332d3077"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "7ffc1ac9c8b54fecfe667786289beb71cb3a30eece7fb2aafe1ca148b7c318bc"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_ventura:  "20b7de0a24360af353f3d5992d5b10335fb3cef193dfb231c60456ae7bef3c8b"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "e5d113cf2a8856b6fecdec3decbb0b775092825f75738eafb09ccc7ca86853dc"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "813f03bff5d30b2e246824e237d2ae2e62f6648656de67f09a0e13fef7542699"
+    sha256 cellar: :any_skip_relocation, ventura:        "aab06b6a3dbc2189a0a6bfadf51fb39f99ab48eb7bbd86c8f490f2baa98aff74"
+    sha256 cellar: :any_skip_relocation, monterey:       "f19e310d6bcf957826dda5bb70cc568e6bbd4b05a1262d18a8c3d3b7197a63d8"
+    sha256 cellar: :any_skip_relocation, big_sur:        "72db6dcdd99be0d351f33568ad8c497a214c7f7490132704cae833a661ffd263"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "116b9b834979670fba92a845ae7f37bcf30236ec4feab03c47275c5af802b4e9"
   end
 
-  # Does not work with Python 3.11, see https://github.com/Backblaze/B2_Command_Line_Tool/issues/834
-  depends_on "python@3.10"
+  depends_on "python@3.11"
   depends_on "six"
 
   conflicts_with "boost-build", because: "both install `b2` binaries"
